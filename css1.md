@@ -106,3 +106,4 @@ body {
 ```
 
 아래가 스타일시트
+<link href="./style.css" rel="stylesheet"> 를 통해 스타일 시트를 만들어서 스타일만 지정할 수 있도록 만들어준다
