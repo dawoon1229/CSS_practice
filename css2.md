@@ -44,6 +44,75 @@
 - background-size: 배경 이미지의 크기(너비와 높이)를 지정한다.
 - background-position: 배경 이미지의 위치를 지정한다.
 - background-repeat: 배경 이미지의 반복 여부 및 방식을 지정한다.
+```Html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .org {
+            color: orange;
+        }
+
+        #sTitle {
+            color: red;
+        }
+
+        #title {
+            border-bottom: 3px solid purple;
+            padding: 20px;
+            margin: 50px;
+            text-align: center;
+        }
+        #content *{
+            box-sizing: border-box;
+        }
+        #content>div{
+            margin: auto;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        #content {
+            width: 500px;
+            height: 450px;
+            border: 5px groove gray;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 50vh;
+            transform: translateY(-300px);
+        }
+        #content input{
+            width: 100%;
+            font-size: 16pt;
+        }
+        .login-btn{
+            width: 100%;
+            height: 50px;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="title" class="org">로그인</h1>
+        <div>
+            <input type="text" placeholder="ID">
+        </div>
+        <div>
+            <input type="password" placeholder="PW">
+        </div>
+        <div>
+            <button class="login-btn">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
+```
 
 ### background-color 와 background-clip
 
@@ -79,6 +148,55 @@ background-size 속성값 * 크기 지정: 크기를 나타내는 수치와 단�
 ### background-position
 
 background-position에 키워드를 입력해 위치를 지정하면 배경 이미지는 박스 안에서 키워드가 의미하는 위치에 맞게 이동한다.
+```Html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        #content {
+            
+            background: url("https://cdn.pixabay.com/photo/2017/08/01/22/10/people-2568247_1280.jpg") gray;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-clip: content-box;
+            /* display: none; */
+            padding: 20px;
+            border: 2px solid red;
+            width: 1000px;
+            height: 500px;
+            box-shadow: 2px 2px 10px gray;
+            text-align: center;
+
+            display: table-cell;
+            vertical-align: middle;
+            
+        }
+        body{
+            height: 100vh;
+            background: url("https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_1280.png");
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+        #title {
+            font-family: '궁서';
+            font-size: 40pt;
+            color: white;
+            text-shadow: 1px 1px 10px purple;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="title">힘으로 안되는건 힘이 부족하기 때문이다</div>
+    </div>
+</body>
+</html>
+```
 
 ## 텍스트 꾸미기
 
