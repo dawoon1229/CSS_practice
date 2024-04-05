@@ -244,3 +244,86 @@ justify-content는 플렉스 컨테이너의 주축 위에서 아이템을 어�
 - space-between: 아이템이 일정한 간격을 둔 채 양끝 정렬 방식으로 배치된다.
 - space-around: 아이템이 각자 동일한 여백을 갖도록 배치된다.
 - space-evenly: 아이템 사이의 모든 간격이 동일하게 유지된 채 배치된다.
+```Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+        }
+        #head {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        #menu {
+            list-style-type: none;
+            padding: 0px;
+            background-color: #0D4036;
+            color: white;
+        }
+        #menu>li {
+            display: inline-block;
+
+        }
+        #menu>li>a {
+            color: white;
+            text-decoration: overline underline;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #0D4036
+        }
+        #menu>li>a:hover {
+            background: #2A8C7A;
+            color: aqua;
+        }
+        #container {
+            display: flex;
+            border: 2px solid blue;
+            height: 300px;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            /* justify-content: space-evenly; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* align-items: flex-end; */
+            align-items: center;
+            
+        }
+        #container>div:first-child {
+            background-color: gray;
+            align-self: flex-start;
+        }
+        #container>div:first-child {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="menu">
+            <li><a href="">홈</a></li>
+            <li><a href="">네이버</a></li>
+            <li><a href="">구글</a></li>
+            <li><a href="">유튜브</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>
+```
