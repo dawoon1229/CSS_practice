@@ -110,3 +110,122 @@ function myFirstFunc { //function은 함수의 정의를 위해 예약된 키워
 2. do / while 문
 3. for 문
 4. for / in 문
+---
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="changeText()" id="title">안녕 제목이야</h1>
+    <button onclick="changeText()">눌러보세요</button>
+
+    <button onclick="print()">인쇄</button>
+
+    <button onclick="openNewTab()">새 창</button>
+    <button onclick="closeTab()">새창닫기</button>
+
+    <button onclick="fullscreen()">전체화면 보기</button>
+
+    <img id="img" width="500" src="https://ssl.pstatic.net/melona/libs/1491/1491834/fdf4c7bd85960551ae4c_20230731151310224_5.jpg" alt="">
+
+    <script>
+        let tab = null;
+
+        function fullscreen() {
+            document.body.requestFullscreen();
+        }
+
+        function openNewTab() {
+            tab = window.open('https://www.naver.com');
+        }
+
+        function closeTab() {
+            tab.close();
+        }
+
+        function changeText() {
+            // html요소의 내용 변경
+            document.getElementById('title').innerText='제목을 바꿔보자';
+
+            // html 요소의 속성 변경
+            document.getElementById('img').src='https://ssl.pstatic.net/melona/libs/1491/1491834/7c98fa6c6137f0778439_20240422135426022_1.jpg';
+            document.getElementById('img').width='1000';
+
+            // html 요소의 스타일 변경
+            document.getElementById('title').style.color = 'red';
+        }
+        
+    </script>
+</body>
+</html>
+```
+<img width="713" alt="스크린샷 2024-04-26 164214" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/7c3c741c-86b6-418c-918c-ccb4d9335bd5">
+
+<img width="808" alt="스크린샷 2024-04-26 164236" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/150321d4-27a1-4278-accd-07492caffb3b">
+
+---
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="changeText()" id="title">안녕 제목이야</h1>
+    
+    <input id="input" type="text">
+    <button onclick="getInputText()">input값 읽기</button>
+    <button onclick="getPrompt()">prompt 읽기</button>
+    <button onclick="alert(text)">text 변수</button>
+    <button onclick="checkLen()">제출</button>
+
+    <script>
+
+        var text = '어떤 값'
+
+        function checkLen() {
+            var text = document.getElementById('input').value;
+            if (text.length < 5) {
+                alert('5글자 이상으로 작성하세요.');
+                return false
+            }
+            return true;
+        }
+
+        function getInputText() {
+            var text = document.getElementById('input').value;
+            alert(text);
+        }
+        function getPrompt() {
+            var text = window.prompt('아무거나 써보세요');
+            alert(text);
+        }
+    </script>
+</body>
+</html>
+```
+
+<img width="392" alt="스크린샷 2024-04-26 164334" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/db613175-e0ba-418f-b1fb-298eadceaf97">
+
+<img width="644" alt="스크린샷 2024-04-26 164359" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/94127b45-4f9e-4d5a-b6a2-65a7b9045e5e">
+
+---
+
+
