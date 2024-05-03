@@ -310,7 +310,8 @@ parent.removeChild(removedItem); //지정된 요소를 삭제
 </html>
 ```
 
-![Uploading 스크린샷 2024-05-03 172819.png…]()
+<img width="550" alt="스크린샷 2024-05-03 172819" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/8dda95d9-9690-4e12-8664-df915063fafb">
+
 
 
 ---
