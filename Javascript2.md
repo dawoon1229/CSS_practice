@@ -4,7 +4,8 @@
 
 DOM은 XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스로, 문서 내의 모든 요소를 정의하고, 각각의 요소에 접근하는 방법을 제공한다.(HTML 요소를 JS로 접근할 수 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/1c047443-c8f6-4cb8-b352-8849b7741714/Untitled.png)
+<img width="395" alt="스크린샷 2024-05-03 151003" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/b0fa3b14-5566-470b-8d93-5f7420076c51">
+
 
 ---
 
@@ -14,15 +15,18 @@ Document 객체는 웹 페이지 그 자체를 의미한다.
 
 웹 페이지에 존재하는 HTML 요소에 접근하고자 할 때는 반드시 Document 객체부터 시작한다. 아래 표는 요소를 선택하기 위한 document 메소드.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/358b18fa-f1c7-4d6e-9fca-1602e4859102/Untitled.png)
+<img width="611" alt="스크린샷 2024-05-03 151121" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/6d41f611-3d9a-4b79-a778-cfc058cf5a96">
+
 
 HTML 요소의 생성 (자바스크립트로 요소를 동적으로 만들어줄 수 있다.)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/e9f70e09-f100-4ae0-adef-7f2411d1f7ca/Untitled.png)
+<img width="632" alt="스크린샷 2024-05-03 151226" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/5f55ba76-4d46-4e80-999e-47b397f2051c">
+
 
 HTML 이벤트 핸들러 추가 (onclick, onXXX 와 같은 이벤트도 동적으로 설정)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/b2d4c150-b8dd-4d0f-b93f-80cb0175c50d/Untitled.png)
+<img width="635" alt="스크린샷 2024-05-03 151305" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/36ac79e2-aeb8-4083-9687-6d6c4ceb461e">
+
 
 ---
 
@@ -193,7 +197,8 @@ parent.removeChild(removedItem); //지정된 요소를 삭제
 </html>
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/4945a3f4-da11-4008-a597-dd8f2f6f6e69/Untitled.png)
+<img width="191" alt="스크린샷 2024-05-03 172629" src="https://github.com/dawoon1229/CSS_practice/assets/164113758/6ffbb820-42a2-46e0-aac6-5cee6fd72318">
+
 
 ---
 
@@ -305,6 +310,7 @@ parent.removeChild(removedItem); //지정된 요소를 삭제
 </html>
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/12bbde16-30cc-4785-ac54-4513c54de876/1f558ea0-741c-4ecf-bbbf-99a5a75b016b/Untitled.png)
+![Uploading 스크린샷 2024-05-03 172819.png…]()
+
 
 ---
